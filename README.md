@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-web-animations-js/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-web-animations-js/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-web-animations-js/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-web-animations-js/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-web-animations-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-web-animations-js/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-web-animations-js/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-web-animations-js/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-web-animations-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-web-animations-js/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-web-animations-js/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-web-animations-js/build/coverage.html/index.html)
 
@@ -35,50 +35,70 @@
 ```json
 
 {
-    "name": "web-animations-js",
-    "description": "JavaScript implementation of the Web Animations API",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/web-animations/web-animations-js.git"
+    "bugs": {
+        "url": "https://github.com/web-animations/web-animations-js/issues"
     },
-    "version": "2.2.5",
-    "keywords": [
-        "animations",
-        "polyfill"
-    ],
-    "homepage": "https://github.com/web-animations",
-    "license": "Apache-2.0",
-    "main": "web-animations.min.js",
+    "dependencies": {},
+    "description": "JavaScript implementation of the Web Animations API",
+    "devDependencies": {
+        "chai": "^1.9.1",
+        "closure-linter-wrapper": "^1.0.0",
+        "grunt": "~0.4.5",
+        "grunt-checkrepo": "~0.1.0",
+        "grunt-contrib-uglify": "^0.4.0",
+        "grunt-git-status": "~1.0.0",
+        "grunt-gjslint": "^0.2.1",
+        "grunt-karma": "^0.8.2",
+        "grunt-saucelabs": "~4.0.2",
+        "grunt-template": "~0.2.3",
+        "karma": "^0.12.14",
+        "karma-chai": "^0.1.0",
+        "karma-chrome-launcher": "~0.1.4",
+        "karma-firefox-launcher": "~0.1.3",
+        "karma-ie-launcher": "~0.1.5",
+        "karma-mocha": "^0.1.3",
+        "karma-safari-launcher": "~0.1.1",
+        "karma-sauce-launcher": "~0.2.3",
+        "mocha": "1.21.4",
+        "source-map": "~0.1.40"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "26ca1b34c1347332a0813f8b2bfe69664efa80aa",
+        "tarball": "https://registry.npmjs.org/web-animations-js/-/web-animations-js-2.2.5.tgz"
+    },
     "files": [
         "src/*",
         "*.min.js",
         "*.min.js.map"
     ],
-    "devDependencies": {
-        "mocha": "1.21.4",
-        "chai": "^1.9.1",
-        "grunt": "~0.4.5",
-        "grunt-contrib-uglify": "^0.4.0",
-        "grunt-gjslint": "^0.2.1",
-        "closure-linter-wrapper": "^1.0.0",
-        "grunt-karma": "^0.8.2",
-        "karma": "^0.12.14",
-        "karma-mocha": "^0.1.3",
-        "karma-chai": "^0.1.0",
-        "karma-chrome-launcher": "~0.1.4",
-        "karma-firefox-launcher": "~0.1.3",
-        "karma-ie-launcher": "~0.1.5",
-        "karma-safari-launcher": "~0.1.1",
-        "karma-sauce-launcher": "~0.2.3",
-        "grunt-checkrepo": "~0.1.0",
-        "grunt-saucelabs": "~4.0.2",
-        "grunt-git-status": "~1.0.0",
-        "grunt-template": "~0.2.3",
-        "source-map": "~0.1.40"
+    "gitHead": "2720e1e5a1b42790613af461b62c4e238ae88d48",
+    "homepage": "https://github.com/web-animations",
+    "keywords": [
+        "animations",
+        "polyfill"
+    ],
+    "license": "Apache-2.0",
+    "main": "web-animations.min.js",
+    "maintainers": [
+        {
+            "name": "alancutter"
+        },
+        {
+            "name": "samthor"
+        }
+    ],
+    "name": "web-animations-js",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/web-animations/web-animations-js.git"
     },
     "scripts": {
         "test": "grunt web-animations web-animations-next test gjslint git-status checkrepo"
-    }
+    },
+    "version": "2.2.5",
+    "bin": {}
 }
 ```
 
